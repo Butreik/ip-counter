@@ -23,6 +23,8 @@ It's better if your implementation is more complicated and faster than this naiv
 Solutions
 -----
 
+To solve the problem, the BitSetCounter algorithm is used. The description of this algorithm and its comparison with other algorithms is described below.
+
 #### Build
 ```
 mvn clean install
@@ -33,6 +35,8 @@ mvn clean install
 java -jar ./target/ip-counter-jar-with-dependencies.jar test_ip_3m_10m.txt
 ```
 
+Description of algorithms
+-----
 ### [HashSetCounter.java](src/main/java/com/butreik/ipcounter/counters/HashSetCounter.java)
 Using a HashSet for uniqueness. Each line (IPv4 address) is stored in a `HashSet`.
 
